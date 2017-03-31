@@ -1,28 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    
     <servlet>
-        <servlet-name>Servlet</servlet-name>
-        <servlet-class>controlador.Servlet</servlet-class>
+        <servlet-name>CadastrarCliente</servlet-name>
+        <servlet-class>controlador.CadastrarCliente</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Sucesso</servlet-name>
+        <servlet-class>controlador.Sucesso</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>IncompletoForm</servlet-name>
+        <servlet-class>controlador.IncompletoForm</servlet-class>
+    </servlet>
+    
+   
     <servlet-mapping>
-        <servlet-name>Servlet</servlet-name>
-        <url-pattern>/servlet</url-pattern>
+        <servlet-name>CadastrarCliente</servlet-name>
+        <url-pattern>/cadastrar-cliente</url-pattern>
     </servlet-mapping>
-    <servlet>
-        <servlet-name>Servlet2</servlet-name>
-        <servlet-class>controlador.Servlet2</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>InformacoesServidor</servlet-name>
-        <servlet-class>controlador.InformacoesServidor</servlet-class>
-    </servlet>
     <servlet-mapping>
-        <servlet-name>Servlet2</servlet-name>
-        <url-pattern>/servlet2</url-pattern>
+        <servlet-name>Sucesso</servlet-name>
+        <url-pattern>/sucesso</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>InformacoesServidor</servlet-name>
-        <url-pattern>/informacoes-servidor</url-pattern>
+        <servlet-name>IncompletoForm</servlet-name>
+        <url-pattern>/incompleto</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
